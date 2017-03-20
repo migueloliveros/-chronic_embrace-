@@ -13,7 +13,7 @@
 #X restore 233 -395 pd startup;
 #X obj 981 -416 osc~ 34.6478;
 #X obj 1096 -415 osc~ 554.365;
-#N canvas 372 0 988 678 disco 0;
+#N canvas 35 23 1680 1001 disco 1;
 #X obj 88 457 *~;
 #X obj 269 193 metro;
 #X floatatom 442 41 5 0 0 0 - - -;
@@ -41,14 +41,14 @@
 #X obj 488 312 f;
 #X text 497 36 speed;
 #X obj 446 3 hsl 128 30 0 2000 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 11600 1;
+-1 -1 8300 1;
 #X obj 444 194 / 2;
 #X obj 327 205 / 4;
 #X text 387 38 ON;
 #X text 434 -17 controlador manual;
 #X obj 424 -60 random 2000;
 #X floatatom 424 -32 3 0 0 0 - - -;
-#X obj 261 488 dac~ 1 2 3 4;
+#X obj 270 624 dac~ 1 2 3 4;
 #X text 529 435 estaba en 2;
 #X msg 105 335 -1 \, 1 \$1;
 #X msg 227 332 -1 \, 1 \$1;
@@ -77,7 +77,7 @@
 #X obj -638 -70 hsl 60 18 0 1 0 1 empty empty wet 2 9 1 12 -225271
 -1 -1 3800 0;
 #X obj -640 -122 hsl 60 18 0 1 0 1 empty empty width 2 9 1 12 -262131
--1 -1 4800 0;
+-1 -1 4000 0;
 #X obj -640 -166 hsl 60 18 0 2 0 1 empty empty damping 2 9 1 12 -261689
 -1 -1 2800 0;
 #X obj -635 -212 hsl 60 18 0.11 1.1 0 1 empty empty roomsize 2 9 1
@@ -98,7 +98,7 @@
 #X obj -459 147 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1 0
 1;
 #X msg -386 167 freeze \$1;
-#X obj -386 148 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1 1
+#X obj -386 148 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1 0
 1;
 #X obj -459 125 metro 3500;
 #X obj -386 124 metro 3500;
@@ -107,7 +107,7 @@
 #X obj -239 101 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X msg -312 165 freeze \$1;
-#X obj -312 146 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1 1
+#X obj -312 146 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1 0
 1;
 #X msg -239 166 freeze \$1;
 #X obj -239 147 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1 0
@@ -122,7 +122,7 @@
 #X obj -495 239 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1 0
 1;
 #X msg -422 259 freeze \$1;
-#X obj -422 240 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1 1
+#X obj -422 240 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1 0
 1;
 #X obj -495 217 metro 5000;
 #X obj -422 216 metro 5000;
@@ -131,7 +131,7 @@
 #X obj -247 199 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X msg -320 263 freeze \$1;
-#X obj -320 244 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1 1
+#X obj -320 244 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1 0
 1;
 #X msg -247 264 freeze \$1;
 #X obj -247 245 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1 0
@@ -144,7 +144,7 @@
 #X obj -78 101 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X msg -78 166 freeze \$1;
-#X obj -78 147 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1 1
+#X obj -78 147 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1 0
 1;
 #X obj -86 199 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
@@ -160,7 +160,7 @@
 #X obj -156 201 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X msg -156 266 freeze \$1;
-#X obj -156 247 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1 1
+#X obj -156 247 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1 0
 1;
 #X obj -156 223 metro 1000;
 #X obj -148 125 metro 5000;
@@ -179,12 +179,12 @@
 #X obj 0 103 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
 #X msg 0 168 freeze \$1;
-#X obj 0 149 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1 0 1
+#X obj 0 149 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1 1 1
 ;
 #X obj -8 201 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
 #X msg -8 266 freeze \$1;
-#X obj -8 247 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1 1 1
+#X obj -8 247 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1 0 1
 ;
 #X obj -8 223 metro 1000;
 #X obj 0 125 metro 6000;
@@ -196,7 +196,19 @@
 #X text -692 -68 0.5;
 #X text -693 -118 0.4;
 #X obj 424 -84 metro 3000;
-#X obj 226 -98 adc~ 1 2 3 4;
+#X obj 234 -181 adc~ 1 2 3 4;
+#X obj -297 -124 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj -294 -28 readsf~ 1;
+#X msg -296 -103 open 02.wav \, 1;
+#X msg -363 -97 stop;
+#X obj -314 -174 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj -277 -78 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X msg -276 -57 open 03.wav \, 1;
+#X msg -314 -152 open 01.wav \, 1;
+#X text 547 48 1307;
 #X connect 0 0 32 0;
 #X connect 1 0 4 0;
 #X connect 1 0 20 0;
@@ -249,12 +261,8 @@
 #X connect 45 0 13 1;
 #X connect 47 0 0 0;
 #X connect 47 0 7 0;
-#X connect 47 0 10 0;
-#X connect 47 0 13 0;
-#X connect 47 1 0 0;
-#X connect 47 1 7 0;
-#X connect 47 1 10 0;
 #X connect 47 1 13 0;
+#X connect 47 1 10 0;
 #X connect 48 0 47 0;
 #X connect 49 0 47 0;
 #X connect 50 0 47 0;
@@ -364,15 +372,38 @@
 #X connect 142 1 32 2;
 #X connect 142 1 32 1;
 #X connect 142 1 32 0;
-#X connect 142 2 47 0;
-#X connect 142 2 47 1;
+#X connect 142 2 13 0;
+#X connect 142 2 0 0;
+#X connect 142 2 7 0;
+#X connect 142 2 10 0;
 #X connect 142 3 0 0;
 #X connect 142 3 7 0;
 #X connect 142 3 10 0;
 #X connect 142 3 13 0;
+#X connect 143 0 145 0;
+#X connect 144 0 0 0;
+#X connect 144 0 7 0;
+#X connect 144 0 10 0;
+#X connect 144 0 13 0;
+#X connect 144 0 32 0;
+#X connect 144 0 32 1;
+#X connect 144 0 32 2;
+#X connect 144 0 32 3;
+#X connect 144 0 47 0;
+#X connect 144 1 0 0;
+#X connect 144 1 7 0;
+#X connect 144 1 10 0;
+#X connect 144 1 13 0;
+#X connect 144 1 47 1;
+#X connect 145 0 144 0;
+#X connect 146 0 144 0;
+#X connect 147 0 150 0;
+#X connect 148 0 149 0;
+#X connect 149 0 144 0;
+#X connect 150 0 144 0;
 #X restore 91 -395 pd disco de acrecion;
 #X obj 35 -366 dsp;
-#X obj 35 -404 tgl 30 0 empty empty empty 17 7 0 10 -4034 -1 -1 1 1
+#X obj 35 -404 tgl 30 0 empty empty empty 17 7 0 10 -4034 -1 -1 0 1
 ;
 #X floatatom 35 -317 5 0 0 0 - - -;
 #X floatatom 50 -340 5 0 0 0 - - -;
